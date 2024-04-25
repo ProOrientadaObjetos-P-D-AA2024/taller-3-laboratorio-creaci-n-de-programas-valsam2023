@@ -4,7 +4,7 @@
  */
 package paket002;
 
-public class hour {
+public class EquivalenteHora {
     //Atributos
     private int houra;
     private int min;

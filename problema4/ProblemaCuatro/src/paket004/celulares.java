@@ -79,5 +79,3 @@ public class celulares {
         this.imei = imei;
     }
 }
-
-

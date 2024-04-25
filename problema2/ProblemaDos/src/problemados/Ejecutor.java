@@ -4,8 +4,8 @@
  */
 package problemados;
 import java.util.Scanner;
-import paket002.hour;
-public class ProblemaDos {
+import paket002.EquivalenteHora;
+public class Ejecutor {
     
     public static void main(String[] args) {
        Scanner sc = new Scanner(System.in);
@@ -14,7 +14,7 @@ public class ProblemaDos {
        int houra;
        
        //1.Crar un objeto
-       hour uno = new hour();
+       EquivalenteHora uno = new EquivalenteHora();
        
        //2.Entrada de datos
        System.out.print("CALCULAR HORAS,MINUTOS,SEGUNDOS,DIAS");
