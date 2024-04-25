@@ -3,18 +3,47 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package problemados;
-
-/**
- *
- * @author Usuario
- */
+import java.util.Scanner;
+import paket002.hour;
 public class ProblemaDos {
-
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+       Scanner sc = new Scanner(System.in);
+       
+       //Declaracion de variable
+       int houra;
+       
+       //1.Crar un objeto
+       hour uno = new hour();
+       
+       //2.Entrada de datos
+       System.out.print("CALCULAR HORAS,MINUTOS,SEGUNDOS,DIAS");
+       
+       motrarseparador();
+   
+       System.out.print("\n-Ingrese la cantidad de horas: ");
+       houra = sc.nextInt();
+       motrarseparador();
+       System.out.print("Cálculo: ");
+       motrarseparador();
+
+       //3.setear datos en el objeto
+       uno.setHoura(houra);
+       uno.calmin();
+       uno.calseg();
+       uno.caldia();
+
+       
+       //Salida de datos
+       System.out.println("En horas: "+uno.getHoura());
+       System.out.println("En minutos: "+uno.getMin());
+       System.out.println("En segundos: "+uno.getSeg());
+       System.out.println("En dias: "+uno.getDay());
+
     }
     
+    //Procedimeinto para separador
+    public static void motrarseparador() {
+    System.out.println("\n**************");
+    }
 }

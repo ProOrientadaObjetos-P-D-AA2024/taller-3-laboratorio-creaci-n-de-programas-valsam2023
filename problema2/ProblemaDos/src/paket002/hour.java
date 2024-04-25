@@ -5,32 +5,43 @@
 package paket002;
 
 public class hour {
-    private int hour;
+    //Atributos
+    private int houra;
     private int min;
     private int seg;
     private double day;
-
-    public hour(int horas) {
-        this.hour = horas;
-        calcularEquivalente();
+    
+    //Metodos
+    //Horas
+    public int getHoura() {
+        return houra;
     }
 
-    private void calcularEquivalente() {
-        min = hour * 60;
-        seg = hour * 3600;
-        day =  hour / 24;
+    public void setHoura(int houra) {
+        this.houra = houra;
     }
-
-    public int getMinutos() {
+    //Minutos
+    public int getMin() {
         return min;
     }
 
-    public int getSegundos() {
+    public void calmin() {
+        min=houra*60;
+    }
+    //Segundos
+    public int getSeg() {
         return seg;
     }
 
-    public double getDias() {
+    public void calseg() {
+        seg=houra*3600;
+    }
+    //Dias
+    public double getDay() {
         return day;
     }
 
+    public void caldia() {
+        day=houra/24;
+    }
 }
